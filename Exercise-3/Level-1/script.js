@@ -14,7 +14,7 @@ console.log(array1[0], array1[Math.floor((array1.length)/2)], array1[array1.leng
 var mixedDataTypes = [1, 'Raj', '2', 55, 'seven', 0];
 console.log(mixedDataTypes.length);
 
-6.
+// 6.
 var itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
 
 // 7.
