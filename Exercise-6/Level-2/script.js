@@ -227,3 +227,21 @@ console.log(acronym);
 var list = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
 for(let i = 0 ; i < list.length ; i++) console.log(list[i]);
 
+// 15.
+var fruit = ['banana', 'orange', 'mango', 'lemon'];
+let arr = [];
+for(let i = fruit.length-1; i >= 0 ; i--) {
+    arr.push(fruit[i]);
+}
+console.log(arr);
+
+// 16.
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ];
+for(var i in fullStack) {
+    for(var j in fullStack[i]) {
+        console.log(fullStack[i][j]);
+    }
+}
