@@ -21,3 +21,88 @@ var g = randomBetween(0, 255);
 var b = randomBetween(0, 255);
 console.log("rgb("+r+","+g+","+b+")");
 
+// 4.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = []
+for(let i = 0 ; i < countries.length ; i++) {
+    array.push(countries[i]);
+} 
+console.log(array);
+
+// 5.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = []
+for(let i = 0 ; i < countries.length ; i++) {
+    array.push(countries[i].length);
+} 
+console.log(array);
+
+// 6.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = []
+for(let i = 0 ; i < countries.length ; i++) {
+    let arr = [];
+    arr.push(countries[i], countries[i].slice(0, 3).toUpperCase(), countries[i].length);
+    array.push(arr);
+} 
+console.log(array);
+
+// 7.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = []
+for(let i = 0 ; i < countries.length ; i++) {
+    if(countries[i].includes('land')) {
+        array.push(countries[i]);
+    }
+}
+if(array.length > 0) console.log(array);
+else console.log("All these countries are without land.");
+
