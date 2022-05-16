@@ -106,3 +106,124 @@ for(let i = 0 ; i < countries.length ; i++) {
 if(array.length > 0) console.log(array);
 else console.log("All these countries are without land.");
 
+// 8.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = []
+for(let i = 0 ; i < countries.length ; i++) {
+    if(countries[i].endsWith('ia')) {
+        array.push(countries[i]);
+    }
+}
+if(array.length > 0) console.log(array);
+else console.log("All these countries are without ia.");
+
+// 9.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var max = countries[0].length;
+    var ans = countries[0];
+    for (var i = 1; i < countries.length; i++) {
+        var max1 = countries[i].length;
+        if (max1 > max) {
+            ans = countries[i];
+            max = max1;
+        }
+    }
+console.log(ans);
+
+// 10.
+var countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ];
+var array = [];
+for(let i = 0 ; i < countries.length ; i++) {
+    if(countries[i].length == 5) {
+        array.push(countries[i]);
+    }
+}
+console.log(array);
+
+// 11.
+var webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ];
+var max = webTechs[0].length;
+var ans = webTechs[0];
+for (var i = 1; i < webTechs.length; i++) {
+    var max1 = webTechs[i].length;
+    if (max1 > max) {
+        ans = webTechs[i];
+        max = max1;
+    }
+}
+console.log(ans);
+
+// 12.
+var webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ];
+var array = []
+for(let i = 0 ; i < webTechs.length ; i++) {
+    let arr = [];
+    arr.push(webTechs[i], webTechs[i].length);
+    array.push(arr);
+  } 
+console.log(array);
+
+// 13.
+var mernStack = ['MongoDB', 'Express', 'React', 'Node'];
+let acronym = "";
+for(let i = 0 ; i < mernStack.length ; i++) {
+    acronym = acronym + mernStack[i].slice(0,1);
+}
+console.log(acronym);
+
+// 14.
+var list = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+for(let i = 0 ; i < list.length ; i++) console.log(list[i]);
+
